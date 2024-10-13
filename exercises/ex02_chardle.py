@@ -1,7 +1,5 @@
 """EX02 - Chardle - A cute step toward Wordle."""
 
-___author___ = "730768692"
-
 
 def input_word() -> str:
     word: str = input("Enter a 5-character word: ")
