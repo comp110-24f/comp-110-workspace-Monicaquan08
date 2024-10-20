@@ -1,8 +1,11 @@
-def extend(a: list[int], b: list[int]) -> None:
-    """Append a list to the end of another list"""
-    for item in b:
-        a.append(item)
-    print(a)
+def add_at_index(c: list[int], element: int, idx: int) -> None:
+    """Adds a specified element to a list at a specified index"""
+    if idx < 0 or idx > len(c):
+        # Tests if the idx is out of range
+        raise IndexError("Index is out of bounds for the input list")
+    c.insert(idx, element)
+    # Inserts element into list BEFORE idx
+    print(c)
 
 
-extend(a=[1, 3, 5], b=[2, 4, 6])
+add_at_index([1, 2, 4], 3, 2)
